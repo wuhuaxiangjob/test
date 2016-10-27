@@ -1,0 +1,79 @@
+
+#map_canvas{height:100%}
+/*home页面*/
+#home-title{font-family: "微软雅黑","黑体";color:#323232;background: #fefefe;font-size: 18px;}
+#btn-plus{background-color:#fefefe;border:none;}
+/*#btn-plus{float:right;background-color:#fefefe;margin-top:5px;}*/
+#home-view .title-top{text-align: center;}
+#tour-view img{width:100%;height:100%;}
+#start-view img{width:100%;height:100%;}
+#home-tabs-img img{height:100%;width:100%;display: block}
+#home-view .link{position:absolute;top:15px;right:0;z-index:20;}
+#home-view .link .corner-top{position:absolute;top:-20px;right:15px;color:#c4d6ec;font-size: 30px;}
+#home-view .link a{display:block;margin:0;background: #c4d6ec}
+#home-view .link .two{padding-top:15px; }
+/*#home-more{line-height: 50px;}*/
+#home-more i{float:left;height:23px;line-height: 23px;font-family: "微软雅黑","黑体";color:#323232;font-size: 16px;}
+#home-more span{float:right;height:23px;line-height: 23px;font-family: "微软雅黑","黑体";color:#323232;font-size: 14px;}
+#home-card{margin:0;}
+#home-card img{width:100%;border:0;height:100%;}
+#home-view .list{padding-top:0;margin-bottom:0;}
+#home-view .item{border:none;}
+#home-view .word-style{height:40px;padding:0;overflow: initial}
+#home-view .word-style h3{line-height:15px;padding: 6px 0 0 16px;font-family: "微软雅黑","黑体";color:#323232;font-size: 14px}
+#home-view .word-style p{line-height:12px;padding:0 0 9px 16px;font-family: "微软雅黑","黑体";color:#323232;font-size: 12px}
+/*serve页面*/
+#serve-view ion-content .searchA{background: #f9f9f9;height:44px;}
+#serve-view ion-content .searchA input{display:inline-block;height:30px;width:96%;position:absolute;top:7px;left:2%;}
+#serve-view ion-content .searchA button{display: inline-block;height:30px;width:30px;position:absolute;top:0;right:2%;z-index: 10;color:#333}
+#serve-view .item{border:none;}
+#serve-view img{width:100%;height:100%;}
+#serve-view .row,#serve-view .list{background: #f9f9f9;}
+#serve-view .col{text-align: center}
+#serve-view .desc{height:19px;font-family: "微软雅黑","黑体";color:#323232;font-size: 14px;text-align: center;line-height: 19px;background: #fff;}
+#serve-view .selectA{border:0;padding:0 9%;height:30px;}
+#serve-view .link{position:absolute;top:15px;right:0;z-index:20;}
+#serve-view .link .corner-top{position:absolute;top:-20px;right:15px;color:#c4d6ec;font-size: 30px;}
+#serve-view .link a{display:block;margin:0;background: #c4d6ec}
+#serve-view .link .two{padding-top:15px; }
+/*find页面*/
+#find-view .box{height:15px;background: #f0f0f2;}
+/*#find-view .box-bot{height:1500px;background: #f0f0f2;}*/
+#find-view .item{margin:0;cursor:pointer;border-left:0;border-right:0;}
+#find-view .one{margin-top:-1px;}
+#find-view .two{border-top:0;}
+#find-view .three{border-top:0;}
+#find-view .last{border-top: 1px solid #fff;padding-top:15px;}
+#find-view .link{position:absolute;top:15px;right:0;z-index:20;}
+#find-view .link .corner-top{position:absolute;top:-20px;right:15px;color:#c4d6ec;font-size: 30px;}
+#find-view .link a{display:block;margin:0;background: #c4d6ec}
+#find-view .link .two{padding-top:15px; }
+/*user页面*/
+#user-view .user-img{height:72px; text-align: center;}
+#user-view .user-img img{display: inline-block;margin-top: 7px;height:36px;width:36px;border-radius:50%;}
+#user-view .box{height:15px;background: #f0f0f2;}
+#user-view .item{margin:0;cursor:pointer;border-left:0;border-right:0;}
+#user-view .one{margin-top:-1px;}
+#user-view .lastA{padding-top:16px;border-top:0;}
+#user-view .two{border-top:0;}
+#user-view .three{border-top:0;}
+#user-view .lastB{border-top:0;padding-top:16px;}
+#user-view .boxA{height:15px;background: #f0f0f2;padding: 0;border:0;border-bottom: 1px solid #ddd;}
+/*#user-view .two{}*/
+#user-view .one{border-bottom: 0;}
+/*体验馆*/
+#btn-back{background: #fff;}
+#experience-view img{width:100%;height:100%;}
+/*#experience-view .button-clear {color:#333;}*/
+
+#map-container .scroll{
+    height:100%;
+}
+/*#search-view input{border:1px solid #ccc}*/
+#search-view ion-content .searchA{background: #f9f9f9;height:44px;}
+#search-view ion-content .searchA input{display:inline-block;height:30px;width:96%;position:absolute;top:7px;left:2%;border-radius:10px;}
+#search-view ion-content .searchA button{display: inline-block;height:30px;width:30px;position:absolute;top:0;right:2%;z-index: 10;color:#333}
+#customization-view img{height:100%;width:100%;}
+#customization-view .center{margin-left:25%;background-color:#fff;margin-top:10px; border:none;width:50%}
+#vip-view img{height:100%;width:100%;}
+#vip-view .bar .button .button-icon,.bar .button.button-icon{color:#333;}

@@ -1,0 +1,49 @@
+<ion-view id="home-view">
+    <!--<ion-nav-title class="icon-right title-top">-->
+        <!--&lt;!&ndash;<i id="home-title">安家</i>&ndash;&gt;-->
+        <!--<button id="btn-plus" class="button icon ion-plus"></button>-->
+    <!--</ion-nav-title>-->
+    <ion-nav-title>
+        <i id="home-title">安家</i>
+    </ion-nav-title>
+    <ion-nav-buttons side="right">
+        <button id="btn-plus" class="button icon ion-plus" ng-click="plusClick()"></button>
+    </ion-nav-buttons>
+    <ion-content>
+        <div class="list link" ng-show="showOrHide==1&&num==0">
+            <span class="corner-top icon ion-arrow-up-b"></span>
+            <a class="item two" href="#/search" ng-click="numClick()">搜索</a>
+            <a class="item two" href="#/customization" ng-click="numClick()">定制</a>
+        </div>
+        <ion-refresher pulling-text="下拉刷新" pulling-icon="icon icon-refresh calm" on-pulling="refresh()"></ion-refresher>
+        <div class="list">
+            <div class="item item-image">
+                <ion-slide-box does-continue="true" show-pager="false" slide-interval="2000" auto-play="true">
+                    <ion-slide> <img src="./images/home-bg.jpg" alt=""></ion-slide>
+                    <ion-slide> <img src="./images/home-bg02.jpg" alt=""></ion-slide>
+                    <ion-slide> <img src="./images/home-bg03.jpg" alt=""></ion-slide>
+                </ion-slide-box>
+            </div>
+            <div class="item row" id="home-tabs-img">
+                <div class="col"><img src="./images/banner01.jpg" alt=""></div>
+                <div class="col"><img src="./images/banner02.jpg" alt=""></div>
+                <div class="col"><img src="./images/banner03.jpg" alt=""></div>
+            </div>
+            <div class="item" id="home-more">
+                <i>热门推荐</i>
+                <span>更多</span>
+            </div>
+        </div>
+        <div class="list card" id="home-card" ng-repeat="product in products">
+            <div class="item item-image" >
+                <img ng-src="{{product.imgSrc}}" alt="">
+            </div>
+            <div class="item word-style">
+                <h3>{{product.style}}</h3>
+                <p>{{product.desc}}</p>
+                <img ng-src="{{product.imgSrc2}}" alt="" style="position:absolute;top:-25px;height:50px;width:50px;border-radius:50%;right:14px;z-index: 10;">
+            </div>
+            <ion-infinite-scroll distance="10%" immediate-check="false" on-infinite="loadMore()"></ion-infinite-scroll>
+        </div>
+    </ion-content>
+</ion-view>

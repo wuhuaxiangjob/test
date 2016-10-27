@@ -1,0 +1,55 @@
+<ion-view id="serve-view">
+    <ion-nav-title>
+        <i id="home-title">服务</i>
+    </ion-nav-title>
+    <ion-nav-buttons side="right">
+        <button id="btn-plus" class="button icon ion-plus" ng-click="plusClick()"></button>
+    </ion-nav-buttons>
+    <ion-content>
+        <div class="list link" ng-show="showOrHide==1&&num==0">
+            <span class="corner-top icon ion-arrow-up-b"></span>
+            <a class="item two" href="#/search" ng-click="numClick()">搜索</a>
+            <a class="item two" href="#/customization" ng-click="numClick()">定制</a>
+        </div>
+        <div class="list">
+            <div class="item searchA">
+                <input type="text">
+                <button class="button icon ion-android-search button-clear"></button>
+            </div>
+            <div class="item row">
+                <select ng-model="style" class="col selectA">
+                    <option value="风格">风格</option>
+                    <option value="地中海">地中海</option>
+                    <option value="现代">现代</option>
+                    <option value="欧式">欧式</option>
+                </select>
+                <select class="col selectA">
+                    <option value="户型">户型</option>
+                    <option value="三居">三居</option>
+                    <option value="二居">二居</option>
+                </select>
+                <select class="col selectA">
+                    <option value="面积">面积</option>
+                    <option value="80平以内">80平以内</option>
+                    <option value="100平以内">100平以内</option>
+                    <option value="大于100平">大于100平</option>
+                </select>
+            </div>
+        </div>
+        <div class="row" >
+            <div class="col" >
+                <div ng-repeat="sampleL in sampleLeft|filter:filterStyle">
+                    <img ng-src="{{sampleL.imgSrc}}" alt="">
+                    <p class="desc">{{sampleL.desc}}</p>
+                </div>
+            </div>
+            <div class="col" >
+                <div ng-repeat="sampleR in sampleRight|filter:filterStyle">
+                    <img ng-src="{{sampleR.imgSrc}}" alt="">
+                    <p class="desc">{{sampleR.desc}}</p>
+                </div>
+            </div>
+
+        </div>
+    </ion-content>
+</ion-view>
